@@ -1,7 +1,7 @@
 #!/bin/bash
-# VMX Premium Installer 2026
-# GitHub-ready, all-in-one
+# VMX Premium Manager Auto-Setup 2026
 # Author: tejasprogaming1713
+# GitHub-ready all-in-one installer
 
 set -e
 
@@ -56,7 +56,7 @@ echo "$VMX_KEY" | sudo tee /root/vmx_exit_key.txt
 sudo chmod 600 /root/vmx_exit_key.txt
 echo "Exit key generated and stored in /root/vmx_exit_key.txt ✅"
 
-# 7️⃣ Create VMX service wrapper (passwordless start/stop/restart/status)
+# 7️⃣ Create VMX service wrapper
 sudo tee /usr/local/bin/vmx-service-wrapper > /dev/null <<'EOF'
 #!/bin/bash
 SERVICE="vmx-mc"
@@ -133,7 +133,7 @@ playit-setup) banner; echo "Starting Playit tunnel...";;
 playit-start) banner; echo "Playit tunnel started";;
 playit-stop) banner; echo "Playit tunnel stopped";;
 
-# Misc / Extra (remaining commands for 64)
+# Misc / Extra commands
 gc) banner; echo "Triggering JVM GC...";;
 console) banner; screen -r mc;;
 say) banner; screen -S mc -X stuff "say $arg^M";;
@@ -153,7 +153,8 @@ version-show) banner; screen -S mc -X stuff "version^M";;
 debug-on) banner; echo "Debug enabled";;
 debug-off) banner; echo "Debug disabled";;
 update) banner; echo "Update placeholder";;
-help|*) banner; echo "64+ Commands: start, stop, restart, status, logs, ram, cpu, uptime, disk, stats, players, ops-add, ops-remove, whitelist-add, whitelist-remove, ban-add, ban-remove, kick, save-all, seed, ip, version, plugins, motd, players-count, uptime-server, backup, restore, backup-list, backup-rotate, auto-backup-start, auto-backup-stop, playit-setup, playit-start, playit-stop, gc, console, say, whitelist-list, ban-list, reload, stop-world, start-world, save-world, motd-set, seed-show, chunk-info, tps, players-op, players-pv, version-show, debug-on, debug-off, update";;
+
+help|*) banner; echo "64+ Commands available. Run 'vmx help'";;
 esac
 EOF
 
@@ -171,5 +172,5 @@ echo "====================================="
 echo "VMX Premium Manager Installed ✅"
 echo "Run using: vmx, VMX, Vmx, vmX"
 echo "Exit Key (root-only): /root/vmx_exit_key.txt"
-echo "Commands: start, stop, restart, status, logs, ram, cpu, uptime, disk, stats, players, ops-add, ops-remove, whitelist-add, whitelist-remove, ban-add, ban-remove, kick, save-all, seed, ip, version, plugins, motd, players-count, uptime-server, backup, restore, backup-list, backup-rotate, auto-backup-start, auto-backup-stop, playit-setup, playit-start, playit-stop, gc, console, say, whitelist-list, ban-list, reload, stop-world, start-world, save-world, motd-set, seed-show, chunk-info, tps, players-op, players-pv, version-show, debug-on, debug-off, update"
+echo "64+ Commands ready!"
 echo "====================================="
