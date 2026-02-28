@@ -1,0 +1,43 @@
+VMX License 2026
+================
+
+Copyright (c) 2026 tejasprogaming1713
+
+This software, VMX Premium Minecraft Manager, is provided under the following terms:
+
+1. **Usage Rights**
+   - You may use this software for personal or commercial purposes.
+   - You may install, run, and execute the software on any number of machines or VPS instances.
+   - You may modify the software for your own use, provided the credit requirements below are strictly followed.
+
+2. **Credit Requirements**
+   - You may NOT remove, obscure, or alter the following credits anywhere in the software, installer, or output:
+       "Developed by tejasprogaming1713"
+   - All scripts, banners, and displayed messages must retain the above credit exactly as written.
+   - Any redistribution, public sharing, or inclusion in a repository must display the credit prominently.
+
+3. **Redistribution and Modification**
+   - Redistribution of the software (original or modified) is allowed ONLY with the credit intact.
+   - You may modify the software’s functionality, commands, or appearance for personal use, but you may NOT claim authorship.
+   - Any modifications must continue to honor the **exit key protection** (randomly generated and stored in `/root/vmx_exit_key.txt`) and may not bypass it.
+
+4. **Exit Key**
+   - The stopping mechanism using the **exit key** is mandatory.
+   - The key is randomly generated during setup and stored securely in `/root/vmx_exit_key.txt` (root-only access).
+   - Disabling, removing, or circumventing the exit key is strictly prohibited.
+
+5. **Warranty and Liability**
+   - This software is provided "as-is", without any warranty of any kind.
+   - The author, tejasprogaming1713, is not liable for any damages, loss of data, or system issues arising from its use.
+   - Use this software at your own risk.
+
+6. **Prohibited Actions**
+   - You may NOT claim this software as your own creation.
+   - You may NOT remove or alter licensing information, credits, or exit key functionality.
+   - You may NOT distribute this software in a manner that hides the author’s identity.
+
+7. **Enforcement**
+   - The author reserves the right to revoke permission to use this software for any party that violates this license.
+   - Compliance with this license is mandatory for continued usage of VMX software.
+
+By using, modifying, or redistributing this software, you agree to comply fully with the terms above.
